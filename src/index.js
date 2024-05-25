@@ -1,4 +1,3 @@
-// src/index.js
 import { useRef, useState } from 'react';
 
 const MagnifierWrapper = ({
