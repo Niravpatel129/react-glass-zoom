@@ -1,6 +1,6 @@
 {
   "name": "react-glass-zoom",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
