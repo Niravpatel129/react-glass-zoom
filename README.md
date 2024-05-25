@@ -27,6 +27,10 @@ javascript
               </MagnifierWrapper>
 ```
 
+## Example 
+![22](https://github.com/Niravpatel129/react-glass-zoom/assets/43049943/22e6cbb7-173c-469e-828d-866154e710a4)
+
+
 ## Licence
 
 MIT
