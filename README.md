@@ -19,7 +19,9 @@ Install the package via npm:
 javascript
 
 ```
-<MagnifierWrapper>
+import GlassZoom from 'react-glass-zoom';
+
+<GlassZoom>
   <img
     src="https://placehold.co/600x400/EEE/31343C"
     alt='Front'
@@ -27,7 +29,7 @@ javascript
     magnifieWidth={200}
     zoomLevel={3}
   />
-</MagnifierWrapper>
+</GlassZoom>
 ```
 
 ## Example
