@@ -11,6 +11,10 @@
   "scripts": {
     "build": "babel src --out-dir dist --copy-files"
   },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.24.6",
