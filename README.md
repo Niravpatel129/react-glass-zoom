@@ -25,6 +25,7 @@ javascript
     alt='Front'
     magnifierHeight={200}
     magnifieWidth={200}
+    zoomLevel={3}
   />
 </MagnifierWrapper>
 ```

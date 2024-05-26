@@ -1,9 +1,7 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 const MagnifierWrapper = ({
   children,
-  width,
-  height,
   magnifierHeight = 200,
   magnifieWidth = 200,
   zoomLevel = 3,
@@ -17,13 +15,13 @@ const MagnifierWrapper = ({
     <div
       style={{
         position: 'relative',
-        height: height,
-        width: width,
+        height: '100%',
+        width: '100%',
       }}
     >
       <img
         src={children.props.src}
-        style={{ height: height, width: width }}
+        style={{ height: '100%', width: '100%' }}
         ref={imageRef}
         onMouseEnter={(e) => {
           const elem = e.currentTarget;
