@@ -39,3 +39,7 @@ import GlassZoom from 'react-glass-zoom';
 ## Licence
 
 MIT
+
+## Source
+
+[GitHub Repository](https://github.com/Niravpatel129/react-glass-zoom)
