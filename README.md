@@ -24,7 +24,7 @@ import GlassZoom from 'react-glass-zoom';
 <GlassZoom>
   <img
     src='https://placehold.co/600x400/EEE/31343C'
-    alt='Front'
+    alt='My Image'
     magnifierHeight={200}
     magnifieWidth={200}
     zoomLevel={3}
