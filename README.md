@@ -19,14 +19,14 @@ Install the package via npm:
 javascript
 
 ```
-  <MagnifierWrapper>
-    <img
-      src="https://placehold.co/600x400/EEE/31343C"
-      alt='Front'
-      magnifierHeight={200}
-      magnifieWidth={200}
-    />
-  </MagnifierWrapper>
+<MagnifierWrapper>
+  <img
+    src="https://placehold.co/600x400/EEE/31343C"
+    alt='Front'
+    magnifierHeight={200}
+    magnifieWidth={200}
+  />
+</MagnifierWrapper>
 ```
 
 ## Example
