@@ -37,7 +37,3 @@ javascript
 ## Licence
 
 MIT
-
-## Keywords
-
-none
