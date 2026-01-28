@@ -4,10 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "prop-types": "^15.8.1",
-    "react": "*",
-    "react-dom": "*",
-    "react-glass-zoom": "^1.1.9"
+    "prop-types": "^15.8.1"
   },
   "scripts": {
     "build": "babel src --out-dir dist --copy-files"

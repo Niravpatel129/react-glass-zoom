@@ -15,11 +15,9 @@ export interface MagnifierWrapperProps {
   
   /**
    * Width of the magnifier glass in pixels.
-   * Note: The prop name has a typo ("magnifieWidth" instead of "magnifierWidth")
-   * for backward compatibility with the existing implementation.
    * @default 200
    */
-  magnifieWidth?: number;
+  magnifierWidth?: number;
   
   /**
    * Zoom level for magnification.

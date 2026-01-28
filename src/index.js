@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 const MagnifierWrapper = ({
   children,
   magnifierHeight = 200,
-  magnifieWidth = 200,
+  magnifierWidth = 200,
   zoomLevel = 3,
 }) => {
   const [[x, y], setXY] = useState([0, 0]);
@@ -34,8 +34,8 @@ const MagnifierWrapper = ({
           const elem = e.currentTarget;
           const { top, left } = elem.getBoundingClientRect();
 
-          const x = e.pageX - left - window.pageXOffset;
-          const y = e.pageY - top - window.pageYOffset;
+          const x = e.clientX - left;
+          const y = e.clientY - top;
           setXY([x, y]);
         }}
         onMouseLeave={() => {
@@ -51,16 +51,16 @@ const MagnifierWrapper = ({
 
           pointerEvents: 'none',
           height: `${magnifierHeight}px`,
-          width: `${magnifieWidth}px`,
+          width: `${magnifierWidth}px`,
           top: `${y - magnifierHeight / 2}px`,
-          left: `${x - magnifieWidth / 2}px`,
+          left: `${x - magnifierWidth / 2}px`,
           opacity: '1',
           border: '1px solid lightgray',
           backgroundColor: 'white',
           backgroundImage: `url('${children.props.src}')`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: `${imgWidth * zoomLevel}px ${imgHeight * zoomLevel}px`,
-          backgroundPositionX: `${-x * zoomLevel + magnifieWidth / 2}px`,
+          backgroundPositionX: `${-x * zoomLevel + magnifierWidth / 2}px`,
           backgroundPositionY: `${-y * zoomLevel + magnifierHeight / 2}px`,
         }}
       ></div>
