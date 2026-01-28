@@ -1,11 +1,11 @@
-import { ReactElement } from 'react';
+import { FC, ReactElement } from 'react';
 
 export interface MagnifierWrapperProps {
   /**
    * The image element to apply magnification to.
    * Should be an img element with a src prop.
    */
-  children: ReactElement<HTMLImageElement>;
+  children: ReactElement;
   
   /**
    * Height of the magnifier glass in pixels.
@@ -15,6 +15,8 @@ export interface MagnifierWrapperProps {
   
   /**
    * Width of the magnifier glass in pixels.
+   * Note: The prop name has a typo ("magnifieWidth" instead of "magnifierWidth")
+   * for backward compatibility with the existing implementation.
    * @default 200
    */
   magnifieWidth?: number;
@@ -32,6 +34,6 @@ export interface MagnifierWrapperProps {
  * A React component that provides a magnification effect on images,
  * similar to a magnifying glass.
  */
-declare const MagnifierWrapper: React.FC<MagnifierWrapperProps>;
+declare const MagnifierWrapper: FC<MagnifierWrapperProps>;
 
 export default MagnifierWrapper;
